@@ -143,7 +143,7 @@ module "ecs_alb_service_task" {
 
 module "ecs_codepipeline" {
   enabled               = var.codepipeline_enabled
-  source                = "git::https://github.com/cloudposse/terraform-aws-ecs-codepipeline.git?ref=tags/0.10.0"
+  source                = "git::https://github.com/BerlingskeMedia/terraform-aws-ecs-codepipeline?ref=temp_github_ref"
   name                  = var.name
   namespace             = var.namespace
   stage                 = var.stage
